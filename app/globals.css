@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 33% 98%;
+  --foreground: 224 28% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 28% 14%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 224 28% 14%;
+  --primary: 223 76% 53%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 217 33% 94%;
+  --secondary-foreground: 223 21% 25%;
+  --muted: 218 29% 95%;
+  --muted-foreground: 220 13% 45%;
+  --accent: 158 45% 46%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 4 74% 55%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 220 22% 88%;
+  --input: 220 22% 88%;
+  --ring: 223 76% 53%;
+  --chart-1: 223 76% 53%;
+  --chart-2: 158 45% 46%;
+  --chart-3: 203 66% 44%;
+  --chart-4: 46 82% 56%;
+  --chart-5: 343 74% 52%;
+  --radius: 0.75rem;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.market-grid {
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+@media (max-width: 640px) {
+  .market-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
