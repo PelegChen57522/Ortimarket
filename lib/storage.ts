@@ -1,5 +1,6 @@
 import "server-only";
 
+import { createHash, randomUUID } from "node:crypto";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -21,7 +22,11 @@ function resolveDataDir() {
 const DATA_DIR = resolveDataDir();
 const IMPORTS_DIR = path.join(DATA_DIR, "imports");
 const RAW_DIR = path.join(DATA_DIR, "raw");
+const BETS_DIR = path.join(DATA_DIR, "bets");
 const IMPORT_ID_PATTERN = /^[a-f0-9-]{36}$/i;
+const USERNAME_PATTERN = /^[A-Za-z0-9_-]{2,64}$/;
+
+export type TradeAction = "BUY" | "SELL";
 
 export type StoredImport = {
   importId: string;
@@ -34,11 +39,30 @@ export type StoredImport = {
   reasoning_details?: unknown[];
 };
 
+export type StoredBet = {
+  betId: string;
+  username: string;
+  importId: string;
+  marketId: string;
+  marketSlug: string;
+  marketTitle: string;
+  marketCategory: string;
+  marketType: GeneratedMarketIdea["market_type"];
+  side: string;
+  action: TradeAction;
+  amount: number;
+  price: number;
+  impliedProbability: number;
+  estimatedPayout: number;
+  placedAt: string;
+};
+
 async function ensureStorageDirs() {
   await Promise.all([
     mkdir(DATA_DIR, { recursive: true }),
     mkdir(IMPORTS_DIR, { recursive: true }),
-    mkdir(RAW_DIR, { recursive: true })
+    mkdir(RAW_DIR, { recursive: true }),
+    mkdir(BETS_DIR, { recursive: true })
   ]);
 }
 
@@ -57,6 +81,19 @@ function importJsonPath(importId: string) {
 function rawTextPath(importId: string) {
   const safeImportId = assertSafeImportId(importId);
   return path.join(RAW_DIR, `${safeImportId}.txt`);
+}
+
+function assertSafeUsername(username: string): string {
+  if (!USERNAME_PATTERN.test(username)) {
+    throw new Error("Invalid username format.");
+  }
+  return username;
+}
+
+function userBetsPath(username: string): string {
+  const safeUsername = assertSafeUsername(username);
+  const digest = createHash("sha256").update(safeUsername).digest("hex").slice(0, 24);
+  return path.join(BETS_DIR, `${digest}.json`);
 }
 
 function normalizeStoredImport(raw: unknown): StoredImport | null {
@@ -112,6 +149,34 @@ async function readImportFile(filePath: string): Promise<StoredImport | null> {
     return normalizeStoredImport(parsed);
   } catch {
     return null;
+  }
+}
+
+async function readUserBetsFile(username: string): Promise<StoredBet[]> {
+  try {
+    const raw = await readFile(userBetsPath(username), "utf8");
+    const parsed = JSON.parse(raw) as unknown;
+    if (!Array.isArray(parsed)) {
+      return [];
+    }
+    return parsed.filter((entry): entry is StoredBet => {
+      if (!entry || typeof entry !== "object") {
+        return false;
+      }
+      const value = entry as Record<string, unknown>;
+      return (
+        typeof value.betId === "string" &&
+        typeof value.username === "string" &&
+        typeof value.marketSlug === "string" &&
+        typeof value.side === "string" &&
+        typeof value.action === "string" &&
+        typeof value.amount === "number" &&
+        typeof value.price === "number" &&
+        typeof value.placedAt === "string"
+      );
+    });
+  } catch {
+    return [];
   }
 }
 
@@ -206,4 +271,71 @@ export async function getMarketBySlug(
   }
 
   return { importData, market };
+}
+
+export async function saveUserBet(params: {
+  username: string;
+  importId: string;
+  market: GeneratedMarketIdea;
+  side: string;
+  action: TradeAction;
+  amount: number;
+  price: number;
+}): Promise<StoredBet> {
+  await ensureStorageDirs();
+
+  const username = assertSafeUsername(params.username);
+  const amount = Number(params.amount);
+  const price = Number(params.price);
+
+  if (!Number.isFinite(amount) || amount <= 0) {
+    throw new Error("Invalid amount.");
+  }
+
+  if (!Number.isFinite(price) || price <= 0 || price > 1) {
+    throw new Error("Invalid price.");
+  }
+
+  const roundedAmount = Number(amount.toFixed(2));
+  const roundedPrice = Number(price.toFixed(4));
+
+  const bet: StoredBet = {
+    betId: randomUUID(),
+    username,
+    importId: assertSafeImportId(params.importId),
+    marketId: params.market.id,
+    marketSlug: params.market.slug,
+    marketTitle: params.market.title,
+    marketCategory: params.market.category,
+    marketType: params.market.market_type,
+    side: params.side.trim(),
+    action: params.action,
+    amount: roundedAmount,
+    price: roundedPrice,
+    impliedProbability: Number((roundedPrice * 100).toFixed(2)),
+    estimatedPayout: Number((roundedAmount / roundedPrice).toFixed(2)),
+    placedAt: new Date().toISOString()
+  };
+
+  const existing = await readUserBetsFile(username);
+  const next = [bet, ...existing].slice(0, 1000);
+
+  await writeFile(userBetsPath(username), JSON.stringify(next, null, 2), {
+    encoding: "utf8",
+    mode: 0o600
+  });
+
+  return bet;
+}
+
+export async function getUserBets(username: string, limit = 200): Promise<StoredBet[]> {
+  await ensureStorageDirs();
+
+  const safeUsername = assertSafeUsername(username);
+  const safeLimit = Number.isFinite(limit) && limit > 0 ? Math.floor(limit) : 200;
+  const bets = await readUserBetsFile(safeUsername);
+
+  return bets
+    .sort((a, b) => +new Date(b.placedAt) - +new Date(a.placedAt))
+    .slice(0, Math.min(safeLimit, 1000));
 }
