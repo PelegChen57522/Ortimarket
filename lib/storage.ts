@@ -5,7 +5,20 @@ import path from "node:path";
 
 import type { GeneratedMarketIdea } from "@/lib/llm/schema";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+function resolveDataDir() {
+  const configuredDir = process.env.ORTIMARKET_DATA_DIR?.trim();
+  if (configuredDir) {
+    return path.isAbsolute(configuredDir) ? configuredDir : path.join(process.cwd(), configuredDir);
+  }
+
+  const isServerlessRuntime = Boolean(
+    process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || process.env.LAMBDA_TASK_ROOT
+  );
+
+  return isServerlessRuntime ? "/tmp/ortimarket-data" : path.join(process.cwd(), "data");
+}
+
+const DATA_DIR = resolveDataDir();
 const IMPORTS_DIR = path.join(DATA_DIR, "imports");
 const RAW_DIR = path.join(DATA_DIR, "raw");
 const IMPORT_ID_PATTERN = /^[a-f0-9-]{36}$/i;
@@ -122,7 +135,7 @@ export async function saveImportResult(params: {
     fileName: params.fileName,
     fileSize: params.fileSize,
     model: params.model,
-    rawTextPath: path.relative(process.cwd(), rawPath),
+    rawTextPath: rawPath.startsWith(process.cwd()) ? path.relative(process.cwd(), rawPath) : rawPath,
     markets: params.markets,
     reasoning_details: params.reasoning_details
   };
