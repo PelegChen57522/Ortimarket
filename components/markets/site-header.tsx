@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Search } from "lucide-react";
 
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
@@ -24,6 +24,7 @@ type SiteHeaderProps = {
 
 export function SiteHeader({ searchValue = "", onSearchChange }: SiteHeaderProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
   const [internalQuery, setInternalQuery] = useState(searchValue);
 
@@ -49,12 +50,21 @@ export function SiteHeader({ searchValue = "", onSearchChange }: SiteHeaderProps
 
   const query = onSearchChange ? searchValue : internalQuery;
 
+  const handleLogout = async () => {
+    try {
+      await fetch("/api/auth/logout", { method: "POST" });
+    } finally {
+      router.replace("/login");
+      router.refresh();
+    }
+  };
+
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/95 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-7xl items-center gap-3 px-4 lg:px-6">
         <div className="flex min-w-[168px] items-center gap-4">
           <Link href="/" className="text-base font-semibold tracking-tight text-foreground">
-            OrtiMarket
+            potymarket
           </Link>
           <nav className="hidden items-center gap-2 text-sm sm:flex">
             <Link
@@ -127,7 +137,9 @@ export function SiteHeader({ searchValue = "", onSearchChange }: SiteHeaderProps
               <DropdownMenuItem>Wallet</DropdownMenuItem>
               <DropdownMenuItem>Settings</DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem className="text-destructive">Disconnect</DropdownMenuItem>
+              <DropdownMenuItem className="text-destructive" onSelect={handleLogout}>
+                Logout
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>

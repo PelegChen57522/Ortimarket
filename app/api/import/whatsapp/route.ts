@@ -2,6 +2,7 @@ import { randomUUID } from "node:crypto";
 
 import { NextResponse } from "next/server";
 
+import { getSessionUserFromRequest, isAllowedOrigin } from "@/lib/auth";
 import { generateMarketsFromChat } from "@/lib/llm/generate-markets";
 import { saveImportResult } from "@/lib/storage";
 
@@ -21,25 +22,18 @@ function secureJson(body: unknown, init?: { status?: number }) {
   });
 }
 
-function isAllowedOrigin(request: Request): boolean {
-  const origin = request.headers.get("origin");
-  if (!origin) {
-    return false;
-  }
-
-  try {
-    return new URL(origin).origin === new URL(request.url).origin;
-  } catch {
-    return false;
-  }
-}
-
 export async function POST(request: Request) {
   try {
     console.log("[import/whatsapp] request:start");
     if (!isAllowedOrigin(request)) {
       console.log("[import/whatsapp] request:forbidden-origin", { origin: request.headers.get("origin") });
       return secureJson({ error: "Forbidden origin." }, { status: 403 });
+    }
+
+    const sessionUser = getSessionUserFromRequest(request);
+    if (!sessionUser) {
+      console.log("[import/whatsapp] request:unauthorized");
+      return secureJson({ error: "Unauthorized." }, { status: 401 });
     }
 
     const formData = await request.formData();

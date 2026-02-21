@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { MarketDetailClient } from "@/components/markets/market-detail-client";
+import { requireSessionUser } from "@/lib/auth";
 import { toDisplayMarket } from "@/lib/markets";
 import { getLatestImport, getMarketBySlug } from "@/lib/storage";
 
@@ -11,6 +12,8 @@ type MarketPageProps = {
 };
 
 export default async function MarketPage({ params }: MarketPageProps) {
+  requireSessionUser();
+
   const latestImport = await getLatestImport();
 
   if (!latestImport) {

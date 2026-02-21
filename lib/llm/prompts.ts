@@ -14,7 +14,13 @@ Hard rules:
 - Keep resolution_criteria objective and verifiable.
 - close_time_guess must be a non-null ISO datetime string for every market.
 - Keep categories inside the enum only.
-- Avoid sensitive/harmful topics: health, sex/romance, finances, humiliation, harassment, doxxing, illegal activity.`;
+- Avoid sensitive/harmful topics: health, sex/romance, finances, humiliation, harassment, doxxing, illegal activity.
+- Prioritize the most recent chat messages when old and new messages conflict.
+- Focus on future-looking outcomes after the latest messages.
+- Use a Polymarket-like framing: concrete, time-bounded, tradable outcomes.
+- Markets must be realistic for this friend group and resolvable within 7-14 days.
+- Use at least 8 distinct angles across all markets (attendance, organizer, timing, location, late changes, transport delays, place preferences, decision dynamics, silence behavior, on-my-way behavior).
+- Avoid near-duplicate markets that ask the same thing with different wording.`;
 
 export function userPrompt(chatText: string): string {
   const currentDate = new Date().toISOString();
@@ -54,6 +60,11 @@ Additional constraints:
 - close_time_guess must be non-null and time-bounded.
 - Do not return markets about health, sex/romance, money, humiliation, harassment, doxxing, or illegal activity.
 - Keep scores in [0,1].
+- Assume WhatsApp export lines are chronological (oldest to newest) and weight the newest lines highest.
+- Prioritize what is likely to happen next based on recent updates.
+- If older messages conflict with recent updates, trust the recent updates.
+- Use only names that actually appear in the chat.
+- Keep markets specific and interesting, but realistically resolvable from chat outcomes.
 
 Chat text:
 """

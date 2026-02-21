@@ -15,7 +15,7 @@ function resolveDataDir() {
     process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || process.env.LAMBDA_TASK_ROOT
   );
 
-  return isServerlessRuntime ? "/tmp/ortimarket-data" : path.join(process.cwd(), "data");
+  return isServerlessRuntime ? "/tmp/potymarket-data" : path.join(process.cwd(), "data");
 }
 
 const DATA_DIR = resolveDataDir();

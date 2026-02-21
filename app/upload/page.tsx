@@ -1,6 +1,9 @@
 import { UploadFlowCard } from "@/components/upload/upload-flow-card";
+import { requireSessionUser } from "@/lib/auth";
 
 export default function UploadPage() {
+  requireSessionUser();
+
   return (
     <main className="min-h-screen bg-background px-4 pb-8 pt-10 sm:pt-14">
       <div className="mx-auto w-full max-w-md space-y-5">

@@ -3,6 +3,7 @@ import { randomUUID } from "node:crypto";
 import { NextResponse } from "next/server";
 import { z } from "next/dist/compiled/zod";
 
+import { getSessionUserFromRequest, isAllowedOrigin } from "@/lib/auth";
 import { generateMarketsFromChat } from "@/lib/llm/generate-markets";
 import { saveImportResult } from "@/lib/storage";
 
@@ -18,19 +19,6 @@ function secureJson(body: unknown, init?: { status?: number }) {
     status: init?.status,
     headers: SECURITY_HEADERS
   });
-}
-
-function isAllowedOrigin(request: Request): boolean {
-  const origin = request.headers.get("origin");
-  if (!origin) {
-    return false;
-  }
-
-  try {
-    return new URL(origin).origin === new URL(request.url).origin;
-  } catch {
-    return false;
-  }
 }
 
 const generateRequestSchema = z.object({
@@ -49,6 +37,12 @@ export async function POST(request: Request) {
     if (!isAllowedOrigin(request)) {
       console.log("[api/llm/generate-markets] request:forbidden-origin", { origin: request.headers.get("origin") });
       return secureJson({ error: "Forbidden origin." }, { status: 403 });
+    }
+
+    const sessionUser = getSessionUserFromRequest(request);
+    if (!sessionUser) {
+      console.log("[api/llm/generate-markets] request:unauthorized");
+      return secureJson({ error: "Unauthorized." }, { status: 401 });
     }
 
     const body = await request.json();

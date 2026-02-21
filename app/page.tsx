@@ -1,4 +1,5 @@
 import { BrowsePage } from "@/components/markets/browse-page";
+import { requireSessionUser } from "@/lib/auth";
 import { toDisplayMarket } from "@/lib/markets";
 import { getLatestImport } from "@/lib/storage";
 
@@ -9,6 +10,8 @@ type HomePageProps = {
 };
 
 export default async function Home({ searchParams }: HomePageProps) {
+  requireSessionUser();
+
   const latestImport = await getLatestImport();
 
   const markets = latestImport
