@@ -1,20 +1,452 @@
 {
   "importId": "547cbb49-0d02-463d-87b5-0fd3ed33798a",
-  "uploadedAt": "2026-02-21T17:44:01.773Z",
+  "uploadedAt": "2026-02-21T18:24:41.167Z",
   "fileName": "_chat 2.txt",
   "fileSize": 464365,
-  "model": "manual-curated-bottom-focused-v3",
+  "model": "manual-full-reset-55-bottom-priority",
   "rawTextPath": "data/raw/547cbb49-0d02-463d-87b5-0fd3ed33798a.txt",
   "markets": [
     {
-      "id": "curatedv3-131547e537b6",
-      "slug": "will-peleg-chen-open-the-next-meetup-thread-with-place-time",
-      "title": "Will Peleg Chen open the next meetup thread with place+time?",
-      "description": "Organizer-lead market weighted to newest planning behavior.",
-      "category": "Friends",
+      "id": "fresh-0e34d86120d8",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-0e34d861",
+      "title": "Will שננגן הקטן🤝 send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for שננגן הקטן🤝, weighted by the newest chat behavior.",
+      "category": "Attendance",
       "market_type": "YES_NO",
-      "resolution_criteria": "Resolves YES if Peleg Chen is first to post a concrete next meetup time and venue.",
+      "resolution_criteria": "Resolves YES if שננגן הקטן🤝 posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
       "close_time_guess": "2026-02-28T18:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.8
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.2
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "@⁨מעיין באר⁩ הם לא עונים יכול לנסות לשנות דרך אונתופו?",
+          "approx_time": "2026-02-20T10:57:22.000Z"
+        },
+        {
+          "quote": "לא אגיע לצערי",
+          "approx_time": "2026-02-19T21:56:47.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-9935cf68b495",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-9935cf68",
+      "title": "Will עומר יוסף send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for עומר יוסף, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if עומר יוסף posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-01T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.82
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.18
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "לא ברור מתי שוהם ופלג יכולים",
+          "approx_time": "2026-02-19T19:25:47.000Z"
+        },
+        {
+          "quote": "ה1+1 לדעתי עד 22:30 כמובן מגיע בכל מקרה",
+          "approx_time": "2026-02-19T13:14:19.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-ab38ed1ee101",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-ab38ed1e",
+      "title": "Will פומי send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for פומי, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if פומי posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-02T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.76
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.24
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "מגיע אולי עם טל",
+          "approx_time": "2026-02-19T17:58:02.000Z"
+        },
+        {
+          "quote": "כן בעד",
+          "approx_time": "2026-02-16T12:07:39.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-79e2c18151c4",
+      "slug": "will-peleg-chen-send-an-explicit-in-the-next-mai-79e2c181",
+      "title": "Will Peleg Chen send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for Peleg Chen, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if Peleg Chen posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-03T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.8
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.2
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "מגיע",
+          "approx_time": "2026-02-19T12:07:19.000Z"
+        },
+        {
+          "quote": "מה שבאלכם אני זורם רק תעדכנו כדי שאדע מתי לצאת מהעבודה",
+          "approx_time": "2026-02-16T12:37:19.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-1b8eb0dd0626",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-1b8eb0dd",
+      "title": "Will מעיין באר send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for מעיין באר, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if מעיין באר posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-04T18:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.82
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.18
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "כל המפתיעים אם אתם מגיעים תתקשרו להגדיל מקום",
+          "approx_time": "2026-02-19T17:58:29.000Z"
+        },
+        {
+          "quote": "אם אתה מגיע תתקשר להגדיל את המקום לעשרה",
+          "approx_time": "2026-02-19T17:58:18.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-f5fb10c73064",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-f5fb10c7",
+      "title": "Will אריאל send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for אריאל, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if אריאל posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-05T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.7
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.3
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "לא יכול להגיע אני בצפון",
+          "approx_time": "2026-02-18T12:09:19.000Z"
+        },
+        {
+          "quote": "מגיע גם",
+          "approx_time": "2026-02-06T11:06:33.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-3a74fb52f592",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-3a74fb52",
+      "title": "Will ליעד חבאני send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for ליעד חבאני, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if ליעד חבאני posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-06T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.82
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.18
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "מגיע להכל חוץ מלני",
+          "approx_time": "2026-02-18T12:07:48.000Z"
+        },
+        {
+          "quote": "מגיע",
+          "approx_time": "2026-02-16T13:42:56.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-c3187bcc80f4",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-c3187bcc",
+      "title": "Will שי פ send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for שי פ, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if שי פ posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-07T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.73
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.27
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "אני באולי ישלי מבחן יום אחרי",
+          "approx_time": "2026-01-19T10:29:38.000Z"
+        },
+        {
+          "quote": "לא יכול היום",
+          "approx_time": "2025-11-18T18:27:52.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-fb3538f482e7",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-fb3538f4",
+      "title": "Will מריאן send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for מריאן, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if מריאן posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-02-28T18:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.82
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.18
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "אני בא לא להרבה יש לי מבחן בשני",
+          "approx_time": "2026-02-18T12:49:38.000Z"
+        },
+        {
+          "quote": "מגיע",
+          "approx_time": "2026-02-16T13:42:32.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-7f03a1470a91",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-7f03a147",
+      "title": "Will פלג בזק send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for פלג בזק, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if פלג בזק posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-01T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.75
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.25
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "סקר: יום שני 2.2 ב-21:15 ב Le Mala אפשרות: מגיע (9 הצבעות) אפשרות: מגיע עם בת זוג (3 הצבעות)",
+          "approx_time": "2026-01-27T08:16:45.000Z"
+        },
+        {
+          "quote": "אני לא יכול בשישי בצהריים 😅",
+          "approx_time": "2026-01-19T09:22:59.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-a938da1ec666",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-a938da1e",
+      "title": "Will ינון דולב send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for ינון דולב, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if ינון דולב posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-02T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.81
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.19
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "אני גם אשמח",
+          "approx_time": "2026-02-20T21:03:17.000Z"
+        },
+        {
+          "quote": "אני זורם על שניהם",
+          "approx_time": "2025-12-25T19:42:59.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-c0b8c5c2ea29",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-c0b8c5c2",
+      "title": "Will שוהם ארמוזה send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for שוהם ארמוזה, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if שוהם ארמוזה posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-03T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.82
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.18
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "ניסיתי מהצהריים להרחיב את השולחן והם לא עונים משום מה אנסה שוב לקראת הערב במקסימום מי שמגיע ראשון ויכול לבקש להוסיף שני כיסאות תבוא עליו הברכה❤️",
+          "approx_time": "2026-02-20T18:45:02.000Z"
+        },
+        {
+          "quote": "עובד לאיכול",
+          "approx_time": "2026-02-16T11:12:03.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-c19fa7d77ffc",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-c19fa7d7",
+      "title": "Will לרי send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for לרי, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if לרי posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-04T18:00:00.000Z",
       "outcomes": [
         {
           "label": "Yes",
@@ -26,52 +458,120 @@
         }
       ],
       "scores": {
-        "creativity": 0.86,
-        "clarity": 0.91,
-        "evidence": 0.9,
-        "fun": 0.81
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
       },
       "evidence": [
         {
-          "quote": "אז בואו נקבע ב10",
-          "approx_time": "2026-02-19T21:20:52.000Z"
+          "quote": "אז אני לא אבוא היום",
+          "approx_time": "2026-02-16T19:42:51.000Z"
         },
         {
-          "quote": "מחר בערב בשולי לוצי ב 22:30 במקום הוזמן ל 8 אנשים יש 1+1 על האלכוהול מה שאומר שמדובר בערב קצה ממליץ להגיע לכבוד יום הולדתי כאחד מזקני השבט 🥳😯",
-          "approx_time": "2026-02-19T13:12:37.000Z"
+          "quote": "לא יכול",
+          "approx_time": "2026-02-08T11:18:16.000Z"
         }
       ]
     },
     {
-      "id": "curatedv3-772aafb11301",
-      "slug": "will-the-final-venue-switch-after-first-lock",
-      "title": "Will the final venue switch after first lock?",
-      "description": "Captures the group’s recurring “lock then pivot” location pattern.",
-      "category": "Plans",
+      "id": "fresh-7dafe46190d6",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-7dafe461",
+      "title": "Will דור סתיו send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for דור סתיו, weighted by the newest chat behavior.",
+      "category": "Attendance",
       "market_type": "YES_NO",
-      "resolution_criteria": "Resolves YES if venue changes after the first clear location lock in the same planning cycle.",
-      "close_time_guess": "2026-03-01T19:00:00.000Z",
+      "resolution_criteria": "Resolves YES if דור סתיו posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-05T19:00:00.000Z",
       "outcomes": [
         {
           "label": "Yes",
-          "initial_probability": 0.61
+          "initial_probability": 0.65
         },
         {
           "label": "No",
-          "initial_probability": 0.39
+          "initial_probability": 0.35
         }
       ],
       "scores": {
-        "creativity": 0.81,
-        "clarity": 0.89,
-        "evidence": 0.89,
-        "fun": 0.78
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
       },
       "evidence": [
         {
-          "quote": "טוב עזבו נשאיר תל אביב",
-          "approx_time": "2026-02-13T16:55:15.000Z"
+          "quote": "מגיע",
+          "approx_time": "2025-12-16T22:53:00.000Z"
         },
+        {
+          "quote": "היום אני לא יכול",
+          "approx_time": "2025-10-12T15:40:15.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-1459eee0e1d5",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-1459eee0",
+      "title": "Will תומר ולדמן send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for תומר ולדמן, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if תומר ולדמן posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-06T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.75
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.25
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "מישהו מגיע מגבעתיים?",
+          "approx_time": "2025-09-04T19:01:01.000Z"
+        },
+        {
+          "quote": "דקה מגיע",
+          "approx_time": "2025-08-15T12:41:11.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-23f5111834bc",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-23f51118",
+      "title": "Will אריאל קוטנר send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for אריאל קוטנר, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if אריאל קוטנר posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-07T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.5
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.5
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
         {
           "quote": "לבוא לכצנלסון?",
           "approx_time": "2026-02-20T22:03:48.000Z"
@@ -79,29 +579,985 @@
       ]
     },
     {
-      "id": "curatedv3-603e278ad16a",
-      "slug": "will-reservation-capacity-be-expanded-again-before-start-time",
-      "title": "Will reservation capacity be expanded again before start time?",
-      "description": "High-signal logistics market based on recent seat expansion messages.",
-      "category": "Logistics",
+      "id": "fresh-719a19f9cf55",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-719a19f9",
+      "title": "Will דניאל גלסברג send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for דניאל גלסברג, weighted by the newest chat behavior.",
+      "category": "Attendance",
       "market_type": "YES_NO",
-      "resolution_criteria": "Resolves YES if any message requests adding seats/expanding reservation before meetup start.",
+      "resolution_criteria": "Resolves YES if דניאל גלסברג posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-02-28T18:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.56
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.44
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "לצערי פחות מרגיש טוב אז לא אגיע היום. נתראה פעם הבאה. תהנו 🫶🏻",
+          "approx_time": "2025-12-18T17:22:31.000Z"
+        },
+        {
+          "quote": "היום לא יכול",
+          "approx_time": "2025-06-21T15:47:46.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-c76e7641f114",
+      "slug": "will-yair-yanovice-send-an-explicit-in-the-next--c76e7641",
+      "title": "Will ~ Yair Yanovice send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for ~ Yair Yanovice, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if ~ Yair Yanovice posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-01T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.38
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.62
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "לצערי לא אגיע 😔",
+          "approx_time": "2026-01-27T09:17:38.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-12b3706ef73b",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-12b3706e",
+      "title": "Will ליבן send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for ליבן, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if ליבן posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
       "close_time_guess": "2026-03-02T20:00:00.000Z",
       "outcomes": [
         {
           "label": "Yes",
-          "initial_probability": 0.77
+          "initial_probability": 0.5
         },
         {
           "label": "No",
+          "initial_probability": 0.5
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "לבוא לכצנלסון?",
+          "approx_time": "2026-02-20T22:03:48.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-591587af0a74",
+      "slug": "will-send-an-explicit-in-the-next-main-meetup-th-591587af",
+      "title": "Will אביב תובל send an explicit \"מגיע\" in the next main meetup thread?",
+      "description": "Attendance signal for אביב תובל, weighted by the newest chat behavior.",
+      "category": "Attendance",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if אביב תובל posts a clear confirmation message (e.g. \"מגיע\"/\"אני בא\") for the next main meetup plan.",
+      "close_time_guess": "2026-03-03T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.5
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.5
+        }
+      ],
+      "scores": {
+        "creativity": 0.74,
+        "clarity": 0.9,
+        "evidence": 0.88,
+        "fun": 0.76
+      },
+      "evidence": [
+        {
+          "quote": "לבוא לכצנלסון?",
+          "approx_time": "2026-02-20T22:03:48.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-f6dd9c961813",
+      "slug": "will-flip-from-positive-to-in-the-same-plan-cycl-f6dd9c96",
+      "title": "Will שננגן הקטן🤝 flip from positive to \"לא יכול\" in the same plan cycle?",
+      "description": "Late churn-risk market for שננגן הקטן🤝.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if שננגן הקטן🤝 posts a positive attendance signal and later cancels for the same upcoming meetup.",
+      "close_time_guess": "2026-03-04T18:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.19
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.81
+        }
+      ],
+      "scores": {
+        "creativity": 0.79,
+        "clarity": 0.87,
+        "evidence": 0.88,
+        "fun": 0.82
+      },
+      "evidence": [
+        {
+          "quote": "@⁨מעיין באר⁩ הם לא עונים יכול לנסות לשנות דרך אונתופו?",
+          "approx_time": "2026-02-20T10:57:22.000Z"
+        },
+        {
+          "quote": "לא אגיע לצערי",
+          "approx_time": "2026-02-19T21:56:47.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-eda6c1ece9bf",
+      "slug": "will-post-a-delay-signal-before-arrival-eda6c1ec",
+      "title": "Will עומר יוסף post a delay signal (\"אאחר\"/\"בדרך\") before arrival?",
+      "description": "Punctuality and delay-risk market for עומר יוסף.",
+      "category": "Chaos",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if עומר יוסף sends a clear delay/ETA message before arriving to the next meetup.",
+      "close_time_guess": "2026-03-05T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.24
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.76
+        }
+      ],
+      "scores": {
+        "creativity": 0.78,
+        "clarity": 0.88,
+        "evidence": 0.87,
+        "fun": 0.8
+      },
+      "evidence": [
+        {
+          "quote": "אולי אאחר בעשר דקות",
+          "approx_time": "2026-02-19T21:20:41.000Z"
+        },
+        {
+          "quote": "אני רבע שעה שם",
+          "approx_time": "2026-02-16T20:20:29.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-90bd9f23421d",
+      "slug": "will-flip-from-positive-to-in-the-same-plan-cycl-90bd9f23",
+      "title": "Will פומי flip from positive to \"לא יכול\" in the same plan cycle?",
+      "description": "Late churn-risk market for פומי.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if פומי posts a positive attendance signal and later cancels for the same upcoming meetup.",
+      "close_time_guess": "2026-03-06T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
           "initial_probability": 0.23
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.77
+        }
+      ],
+      "scores": {
+        "creativity": 0.79,
+        "clarity": 0.87,
+        "evidence": 0.88,
+        "fun": 0.82
+      },
+      "evidence": [
+        {
+          "quote": "מגיע אולי עם טל",
+          "approx_time": "2026-02-19T17:58:02.000Z"
+        },
+        {
+          "quote": "כן בעד",
+          "approx_time": "2026-02-16T12:07:39.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-2e96d31b5275",
+      "slug": "will-peleg-chen-flip-from-positive-to-in-the-sam-2e96d31b",
+      "title": "Will Peleg Chen flip from positive to \"לא יכול\" in the same plan cycle?",
+      "description": "Late churn-risk market for Peleg Chen.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if Peleg Chen posts a positive attendance signal and later cancels for the same upcoming meetup.",
+      "close_time_guess": "2026-03-07T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.18
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.82
+        }
+      ],
+      "scores": {
+        "creativity": 0.79,
+        "clarity": 0.87,
+        "evidence": 0.88,
+        "fun": 0.82
+      },
+      "evidence": [
+        {
+          "quote": "מגיע",
+          "approx_time": "2026-02-19T12:07:19.000Z"
+        },
+        {
+          "quote": "מה שבאלכם אני זורם רק תעדכנו כדי שאדע מתי לצאת מהעבודה",
+          "approx_time": "2026-02-16T12:37:19.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-4bbc0fb1e4b0",
+      "slug": "will-post-a-delay-signal-before-arrival-4bbc0fb1",
+      "title": "Will מעיין באר post a delay signal (\"אאחר\"/\"בדרך\") before arrival?",
+      "description": "Punctuality and delay-risk market for מעיין באר.",
+      "category": "Chaos",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if מעיין באר sends a clear delay/ETA message before arriving to the next meetup.",
+      "close_time_guess": "2026-02-28T18:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.21
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.79
+        }
+      ],
+      "scores": {
+        "creativity": 0.78,
+        "clarity": 0.88,
+        "evidence": 0.87,
+        "fun": 0.8
+      },
+      "evidence": [
+        {
+          "quote": "לפרק לא צריך רק אם מישהו יוכל לעזור לי להרים את החלקים לבית ברמת גם עוד 20 דק זה יהיה קטלני",
+          "approx_time": "2026-02-01T20:56:04.000Z"
+        },
+        {
+          "quote": "רבע שעה בערך מגיע",
+          "approx_time": "2026-01-18T21:25:05.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-948cb5dee3be",
+      "slug": "will-flip-from-positive-to-in-the-same-plan-cycl-948cb5de",
+      "title": "Will אריאל flip from positive to \"לא יכול\" in the same plan cycle?",
+      "description": "Late churn-risk market for אריאל.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if אריאל posts a positive attendance signal and later cancels for the same upcoming meetup.",
+      "close_time_guess": "2026-03-01T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.29
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.71
+        }
+      ],
+      "scores": {
+        "creativity": 0.79,
+        "clarity": 0.87,
+        "evidence": 0.88,
+        "fun": 0.82
+      },
+      "evidence": [
+        {
+          "quote": "לא יכול להגיע אני בצפון",
+          "approx_time": "2026-02-18T12:09:19.000Z"
+        },
+        {
+          "quote": "מגיע גם",
+          "approx_time": "2026-02-06T11:06:33.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-6e1caaed1ec0",
+      "slug": "will-post-a-delay-signal-before-arrival-6e1caaed",
+      "title": "Will ליעד חבאני post a delay signal (\"אאחר\"/\"בדרך\") before arrival?",
+      "description": "Punctuality and delay-risk market for ליעד חבאני.",
+      "category": "Chaos",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if ליעד חבאני sends a clear delay/ETA message before arriving to the next meetup.",
+      "close_time_guess": "2026-03-02T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.2
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.8
+        }
+      ],
+      "scores": {
+        "creativity": 0.78,
+        "clarity": 0.88,
+        "evidence": 0.87,
+        "fun": 0.8
+      },
+      "evidence": [
+        {
+          "quote": "אני וינון רבע שעה שם",
+          "approx_time": "2025-12-04T20:53:58.000Z"
+        },
+        {
+          "quote": "אני מאחר",
+          "approx_time": "2025-11-21T21:03:46.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-5338c7c549c4",
+      "slug": "will-flip-from-positive-to-in-the-same-plan-cycl-5338c7c5",
+      "title": "Will שי פ flip from positive to \"לא יכול\" in the same plan cycle?",
+      "description": "Late churn-risk market for שי פ.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if שי פ posts a positive attendance signal and later cancels for the same upcoming meetup.",
+      "close_time_guess": "2026-03-03T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.25
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.75
+        }
+      ],
+      "scores": {
+        "creativity": 0.79,
+        "clarity": 0.87,
+        "evidence": 0.88,
+        "fun": 0.82
+      },
+      "evidence": [
+        {
+          "quote": "אני באולי ישלי מבחן יום אחרי",
+          "approx_time": "2026-01-19T10:29:38.000Z"
+        },
+        {
+          "quote": "לא יכול היום",
+          "approx_time": "2025-11-18T18:27:52.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-5d7adb6c7c59",
+      "slug": "will-flip-from-positive-to-in-the-same-plan-cycl-5d7adb6c",
+      "title": "Will מריאן flip from positive to \"לא יכול\" in the same plan cycle?",
+      "description": "Late churn-risk market for מריאן.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if מריאן posts a positive attendance signal and later cancels for the same upcoming meetup.",
+      "close_time_guess": "2026-03-04T18:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.18
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.82
+        }
+      ],
+      "scores": {
+        "creativity": 0.79,
+        "clarity": 0.87,
+        "evidence": 0.88,
+        "fun": 0.82
+      },
+      "evidence": [
+        {
+          "quote": "אני בא לא להרבה יש לי מבחן בשני",
+          "approx_time": "2026-02-18T12:49:38.000Z"
+        },
+        {
+          "quote": "מגיע",
+          "approx_time": "2026-02-16T13:42:32.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-a106991d687b",
+      "slug": "will-flip-from-positive-to-in-the-same-plan-cycl-a106991d",
+      "title": "Will פלג בזק flip from positive to \"לא יכול\" in the same plan cycle?",
+      "description": "Late churn-risk market for פלג בזק.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if פלג בזק posts a positive attendance signal and later cancels for the same upcoming meetup.",
+      "close_time_guess": "2026-03-05T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.24
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.76
+        }
+      ],
+      "scores": {
+        "creativity": 0.79,
+        "clarity": 0.87,
+        "evidence": 0.88,
+        "fun": 0.82
+      },
+      "evidence": [
+        {
+          "quote": "סקר: יום שני 2.2 ב-21:15 ב Le Mala אפשרות: מגיע (9 הצבעות) אפשרות: מגיע עם בת זוג (3 הצבעות)",
+          "approx_time": "2026-01-27T08:16:45.000Z"
+        },
+        {
+          "quote": "אני לא יכול בשישי בצהריים 😅",
+          "approx_time": "2026-01-19T09:22:59.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-d273c46b928d",
+      "slug": "will-flip-from-positive-to-in-the-same-plan-cycl-d273c46b",
+      "title": "Will ינון דולב flip from positive to \"לא יכול\" in the same plan cycle?",
+      "description": "Late churn-risk market for ינון דולב.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if ינון דולב posts a positive attendance signal and later cancels for the same upcoming meetup.",
+      "close_time_guess": "2026-03-06T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.18
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.82
+        }
+      ],
+      "scores": {
+        "creativity": 0.79,
+        "clarity": 0.87,
+        "evidence": 0.88,
+        "fun": 0.82
+      },
+      "evidence": [
+        {
+          "quote": "אני גם אשמח",
+          "approx_time": "2026-02-20T21:03:17.000Z"
+        },
+        {
+          "quote": "אני זורם על שניהם",
+          "approx_time": "2025-12-25T19:42:59.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-57279dc25e03",
+      "slug": "will-post-a-delay-signal-before-arrival-57279dc2",
+      "title": "Will שוהם ארמוזה post a delay signal (\"אאחר\"/\"בדרך\") before arrival?",
+      "description": "Punctuality and delay-risk market for שוהם ארמוזה.",
+      "category": "Chaos",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if שוהם ארמוזה sends a clear delay/ETA message before arriving to the next meetup.",
+      "close_time_guess": "2026-03-07T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.48
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.52
+        }
+      ],
+      "scores": {
+        "creativity": 0.78,
+        "clarity": 0.88,
+        "evidence": 0.87,
+        "fun": 0.8
+      },
+      "evidence": [
+        {
+          "quote": "אני וטל בדרך",
+          "approx_time": "2026-02-19T22:14:33.000Z"
+        },
+        {
+          "quote": "כנראה מגיע באיחור עם טל",
+          "approx_time": "2026-01-02T09:48:06.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-9f1c7eb21484",
+      "slug": "will-flip-from-positive-to-in-the-same-plan-cycl-9f1c7eb2",
+      "title": "Will לרי flip from positive to \"לא יכול\" in the same plan cycle?",
+      "description": "Late churn-risk market for לרי.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if לרי posts a positive attendance signal and later cancels for the same upcoming meetup.",
+      "close_time_guess": "2026-02-28T18:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.41
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.59
+        }
+      ],
+      "scores": {
+        "creativity": 0.79,
+        "clarity": 0.87,
+        "evidence": 0.88,
+        "fun": 0.82
+      },
+      "evidence": [
+        {
+          "quote": "אז אני לא אבוא היום",
+          "approx_time": "2026-02-16T19:42:51.000Z"
+        },
+        {
+          "quote": "לא יכול",
+          "approx_time": "2026-02-08T11:18:16.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-f562990b30ca",
+      "slug": "will-flip-from-positive-to-in-the-same-plan-cycl-f562990b",
+      "title": "Will דור סתיו flip from positive to \"לא יכול\" in the same plan cycle?",
+      "description": "Late churn-risk market for דור סתיו.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if דור סתיו posts a positive attendance signal and later cancels for the same upcoming meetup.",
+      "close_time_guess": "2026-03-01T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.33
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.67
+        }
+      ],
+      "scores": {
+        "creativity": 0.79,
+        "clarity": 0.87,
+        "evidence": 0.88,
+        "fun": 0.82
+      },
+      "evidence": [
+        {
+          "quote": "מגיע",
+          "approx_time": "2025-12-16T22:53:00.000Z"
+        },
+        {
+          "quote": "היום אני לא יכול",
+          "approx_time": "2025-10-12T15:40:15.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-3f5141373485",
+      "slug": "will-post-a-delay-signal-before-arrival-3f514137",
+      "title": "Will תומר ולדמן post a delay signal (\"אאחר\"/\"בדרך\") before arrival?",
+      "description": "Punctuality and delay-risk market for תומר ולדמן.",
+      "category": "Chaos",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if תומר ולדמן sends a clear delay/ETA message before arriving to the next meetup.",
+      "close_time_guess": "2026-03-02T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.33
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.67
+        }
+      ],
+      "scores": {
+        "creativity": 0.78,
+        "clarity": 0.88,
+        "evidence": 0.87,
+        "fun": 0.8
+      },
+      "evidence": [
+        {
+          "quote": "בדרך התמונה הושמטה",
+          "approx_time": "2025-07-31T21:44:19.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-202210364728",
+      "slug": "will-arrive-with-in-the-next-friday-saturday-mee-20221036",
+      "title": "Will פומי arrive with טל in the next Friday/Saturday meetup?",
+      "description": "Couple attendance market for פומי + טל based on recent +1 coordination.",
+      "category": "Friends",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if פומי is explicitly mentioned as arriving with טל in the next Friday/Saturday plan thread.",
+      "close_time_guess": "2026-03-03T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.46
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.54
+        }
+      ],
+      "scores": {
+        "creativity": 0.9,
+        "clarity": 0.84,
+        "evidence": 0.83,
+        "fun": 0.9
+      },
+      "evidence": [
+        {
+          "quote": "אני גם אשמח",
+          "approx_time": "2026-02-20T21:03:17.000Z"
+        },
+        {
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-ab4baeb1f668",
+      "slug": "will-arrive-with-in-the-next-friday-saturday-mee-ab4baeb1",
+      "title": "Will שוהם ארמוזה arrive with טל in the next Friday/Saturday meetup?",
+      "description": "Couple attendance market for שוהם ארמוזה + טל based on recent +1 coordination.",
+      "category": "Friends",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if שוהם ארמוזה is explicitly mentioned as arriving with טל in the next Friday/Saturday plan thread.",
+      "close_time_guess": "2026-03-04T18:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.46
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.54
+        }
+      ],
+      "scores": {
+        "creativity": 0.9,
+        "clarity": 0.84,
+        "evidence": 0.83,
+        "fun": 0.9
+      },
+      "evidence": [
+        {
+          "quote": "אני גם אשמח",
+          "approx_time": "2026-02-20T21:03:17.000Z"
+        },
+        {
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-14f4177bc9c4",
+      "slug": "will-peleg-chen-arrive-with-in-the-next-friday-s-14f4177b",
+      "title": "Will Peleg Chen arrive with תמר in the next Friday/Saturday meetup?",
+      "description": "Couple attendance market for Peleg Chen + תמר based on recent +1 coordination.",
+      "category": "Friends",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if Peleg Chen is explicitly mentioned as arriving with תמר in the next Friday/Saturday plan thread.",
+      "close_time_guess": "2026-03-05T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.46
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.54
+        }
+      ],
+      "scores": {
+        "creativity": 0.9,
+        "clarity": 0.84,
+        "evidence": 0.83,
+        "fun": 0.9
+      },
+      "evidence": [
+        {
+          "quote": "אני גם אשמח",
+          "approx_time": "2026-02-20T21:03:17.000Z"
+        },
+        {
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-5e6fd8047a51",
+      "slug": "will-arrive-with-in-the-next-friday-saturday-mee-5e6fd804",
+      "title": "Will עומר יוסף arrive with נטע in the next Friday/Saturday meetup?",
+      "description": "Couple attendance market for עומר יוסף + נטע based on recent +1 coordination.",
+      "category": "Friends",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if עומר יוסף is explicitly mentioned as arriving with נטע in the next Friday/Saturday plan thread.",
+      "close_time_guess": "2026-03-06T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.46
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.54
+        }
+      ],
+      "scores": {
+        "creativity": 0.9,
+        "clarity": 0.84,
+        "evidence": 0.83,
+        "fun": 0.9
+      },
+      "evidence": [
+        {
+          "quote": "אני גם אשמח",
+          "approx_time": "2026-02-20T21:03:17.000Z"
+        },
+        {
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-d6e922af5805",
+      "slug": "will-arrive-with-in-the-next-friday-saturday-mee-d6e922af",
+      "title": "Will שננגן הקטן🤝 arrive with עדן in the next Friday/Saturday meetup?",
+      "description": "Couple attendance market for שננגן הקטן🤝 + עדן based on recent +1 coordination.",
+      "category": "Friends",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if שננגן הקטן🤝 is explicitly mentioned as arriving with עדן in the next Friday/Saturday plan thread.",
+      "close_time_guess": "2026-03-07T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.46
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.54
+        }
+      ],
+      "scores": {
+        "creativity": 0.9,
+        "clarity": 0.84,
+        "evidence": 0.83,
+        "fun": 0.9
+      },
+      "evidence": [
+        {
+          "quote": "אני גם אשמח",
+          "approx_time": "2026-02-20T21:03:17.000Z"
+        },
+        {
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-a25412f1b60d",
+      "slug": "will-arrive-with-in-the-next-friday-saturday-mee-a25412f1",
+      "title": "Will לרי arrive with עדן in the next Friday/Saturday meetup?",
+      "description": "Couple attendance market for לרי + עדן based on recent +1 coordination.",
+      "category": "Friends",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if לרי is explicitly mentioned as arriving with עדן in the next Friday/Saturday plan thread.",
+      "close_time_guess": "2026-02-28T18:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.46
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.54
+        }
+      ],
+      "scores": {
+        "creativity": 0.9,
+        "clarity": 0.84,
+        "evidence": 0.83,
+        "fun": 0.9
+      },
+      "evidence": [
+        {
+          "quote": "אני גם אשמח",
+          "approx_time": "2026-02-20T21:03:17.000Z"
+        },
+        {
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-c915429cc245",
+      "slug": "will-arrive-with-in-the-next-friday-saturday-mee-c915429c",
+      "title": "Will אריאל arrive with שי in the next Friday/Saturday meetup?",
+      "description": "Couple attendance market for אריאל + שי based on recent +1 coordination.",
+      "category": "Friends",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if אריאל is explicitly mentioned as arriving with שי in the next Friday/Saturday plan thread.",
+      "close_time_guess": "2026-03-01T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.46
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.54
+        }
+      ],
+      "scores": {
+        "creativity": 0.9,
+        "clarity": 0.84,
+        "evidence": 0.83,
+        "fun": 0.9
+      },
+      "evidence": [
+        {
+          "quote": "אני גם אשמח",
+          "approx_time": "2026-02-20T21:03:17.000Z"
+        },
+        {
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-73b22426929f",
+      "slug": "will-the-group-switch-venue-after-an-initial-ven-73b22426",
+      "title": "Will the group switch venue after an initial venue lock?",
+      "description": "Tracks the recurring lock-then-pivot behavior in the newest planning threads.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if the final meetup venue is different from the first clearly locked venue in the same thread.",
+      "close_time_guess": "2026-03-02T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.62
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.38
+        }
+      ],
+      "scores": {
+        "creativity": 0.82,
+        "clarity": 0.9,
+        "evidence": 0.91,
+        "fun": 0.79
+      },
+      "evidence": [
+        {
+          "quote": "לבוא לכצנלסון?",
+          "approx_time": "2026-02-20T22:03:48.000Z"
+        },
+        {
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-a7e96ceda6d8",
+      "slug": "will-reservation-size-be-increased-again-before--a7e96ced",
+      "title": "Will reservation size be increased again before meetup start?",
+      "description": "High-signal logistics behavior: adding seats and expanding tables.",
+      "category": "Logistics",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if messages include expanding reservation/adding chairs before start time.",
+      "close_time_guess": "2026-03-03T21:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.78
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.22
         }
       ],
       "scores": {
         "creativity": 0.8,
         "clarity": 0.93,
         "evidence": 0.94,
-        "fun": 0.75
+        "fun": 0.76
       },
       "evidence": [
         {
@@ -115,86 +1571,86 @@
       ]
     },
     {
-      "id": "curatedv3-d707442a8de7",
-      "slug": "will-someone-flip-from-coming-to-not-coming-late",
-      "title": "Will someone flip from “coming” to “not coming” late?",
-      "description": "Late churn risk market for final-hour attendance instability.",
-      "category": "Chaos",
-      "market_type": "YES_NO",
-      "resolution_criteria": "Resolves YES if a participant posts a positive/maybe signal and then cancels within 3 hours of meetup.",
-      "close_time_guess": "2026-03-03T21:00:00.000Z",
-      "outcomes": [
-        {
-          "label": "Yes",
-          "initial_probability": 0.64
-        },
-        {
-          "label": "No",
-          "initial_probability": 0.36
-        }
-      ],
-      "scores": {
-        "creativity": 0.82,
-        "clarity": 0.87,
-        "evidence": 0.88,
-        "fun": 0.82
-      },
-      "evidence": [
-        {
-          "quote": "מאמין שאוכל לקפוץ",
-          "approx_time": "2026-02-19T15:54:29.000Z"
-        },
-        {
-          "quote": "לא אגיע לצערי",
-          "approx_time": "2026-02-19T21:56:47.000Z"
-        }
-      ]
-    },
-    {
-      "id": "curatedv3-1a1203d335d2",
-      "slug": "will-a-givatayim-carpool-leave-with-all-seats-filled",
-      "title": "Will a Givatayim carpool leave with all seats filled?",
-      "description": "Transport market tied to explicit seat-offer patterns.",
+      "id": "fresh-1ea8cc1b73fc",
+      "slug": "will-a-givatayim-carpool-post-fill-all-announced-1ea8cc1b",
+      "title": "Will a Givatayim carpool post fill all announced seats?",
+      "description": "Transport coordination market based on explicit car seat offers.",
       "category": "Logistics",
       "market_type": "YES_NO",
-      "resolution_criteria": "Resolves YES if a Givatayim departure offer is posted and all advertised seats are claimed in thread.",
+      "resolution_criteria": "Resolves YES if a ride offer from Givatayim is posted and all seats are explicitly claimed.",
       "close_time_guess": "2026-03-04T18:00:00.000Z",
       "outcomes": [
         {
           "label": "Yes",
-          "initial_probability": 0.69
+          "initial_probability": 0.68
         },
         {
           "label": "No",
-          "initial_probability": 0.31
+          "initial_probability": 0.32
         }
       ],
       "scores": {
-        "creativity": 0.85,
-        "clarity": 0.9,
-        "evidence": 0.91,
-        "fun": 0.8
+        "creativity": 0.86,
+        "clarity": 0.89,
+        "evidence": 0.9,
+        "fun": 0.82
       },
       "evidence": [
         {
-          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
-          "approx_time": "2026-02-20T20:23:12.000Z"
+          "quote": "סבבה גם רומי אז אנחנו רכב",
+          "approx_time": "2026-02-20T21:27:01.000Z"
         },
         {
-          "quote": "יצאתי פלג אתה ראשון",
-          "approx_time": "2026-02-20T22:03:33.000Z"
+          "quote": "גם אני",
+          "approx_time": "2026-02-20T21:04:18.000Z"
         }
       ]
     },
     {
-      "id": "curatedv3-02e0e3057f26",
-      "slug": "will-final-meetup-time-drift-later-than-the-first-suggested-hour",
-      "title": "Will final meetup time drift later than the first suggested hour?",
-      "description": "Time drift market from recurring 21:30→22:00→22:30 negotiation.",
+      "id": "fresh-bdcdfc8f03a4",
+      "slug": "will-a-whatsapp-poll-be-used-to-decide-the-next--bdcdfc8f",
+      "title": "Will a WhatsApp poll be used to decide the next plan?",
+      "description": "Decision-mode market for when coordination stalls.",
+      "category": "Plans",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if a poll is posted for location/time/attendance decision in the next plan cycle.",
+      "close_time_guess": "2026-03-05T19:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.55
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.45
+        }
+      ],
+      "scores": {
+        "creativity": 0.77,
+        "clarity": 0.89,
+        "evidence": 0.9,
+        "fun": 0.78
+      },
+      "evidence": [
+        {
+          "quote": "סקר: שישי אתה בא אפשרות: כן עם בת זוג (0 הצבעות) אפשרות: כן (7 הצבעות) אפשרות: לא אבל אולי כן (0 הצבעות)",
+          "approx_time": "2026-02-18T12:08:36.000Z"
+        },
+        {
+          "quote": "סקר: מיקום אפשרות: גבעתיים (4 הצבעות) אפשרות: תל אביב (5 הצבעות)",
+          "approx_time": "2026-02-13T16:48:17.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-e55e2e7e4100",
+      "slug": "will-final-meetup-time-drift-later-than-first-su-e55e2e7e",
+      "title": "Will final meetup time drift later than first suggested time?",
+      "description": "Time-drift pattern from 21:30 to 22:00/22:30 negotiations.",
       "category": "Tonight",
       "market_type": "YES_NO",
-      "resolution_criteria": "Resolves YES if final agreed start hour is later than the first stated start hour.",
-      "close_time_guess": "2026-03-05T19:00:00.000Z",
+      "resolution_criteria": "Resolves YES if final start time is later than first explicit start time in thread.",
+      "close_time_guess": "2026-03-06T20:00:00.000Z",
       "outcomes": [
         {
           "label": "Yes",
@@ -206,46 +1662,46 @@
         }
       ],
       "scores": {
-        "creativity": 0.84,
-        "clarity": 0.9,
+        "creativity": 0.83,
+        "clarity": 0.91,
         "evidence": 0.9,
-        "fun": 0.78
+        "fun": 0.79
       },
       "evidence": [
         {
-          "quote": "בואו ב2130 זה בא לי טוב אחריי העבודה",
-          "approx_time": "2026-02-19T18:55:44.000Z"
-        },
-        {
           "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
           "approx_time": "2026-02-20T20:23:12.000Z"
+        },
+        {
+          "quote": "סבבה עשר שם",
+          "approx_time": "2026-02-19T21:21:47.000Z"
         }
       ]
     },
     {
-      "id": "curatedv3-e8de8d00ed66",
-      "slug": "will-there-be-a-same-night-main-plan-after-party-split",
-      "title": "Will there be a same-night “main plan + after party” split?",
-      "description": "Creative but realistic two-stage night-flow market.",
+      "id": "fresh-b80a510e1290",
+      "slug": "will-there-be-a-same-night-main-plan-after-party-b80a510e",
+      "title": "Will there be a same-night main plan + after-party split?",
+      "description": "Creative two-stage flow market grounded in recent behavior.",
       "category": "Weekend",
       "market_type": "YES_NO",
-      "resolution_criteria": "Resolves YES if group plans a main meetup and explicit second-stage party/after-plan for same night.",
-      "close_time_guess": "2026-03-06T20:00:00.000Z",
+      "resolution_criteria": "Resolves YES if chat locks a main meetup and explicitly plans a second after-party for the same night.",
+      "close_time_guess": "2026-03-07T21:00:00.000Z",
       "outcomes": [
         {
           "label": "Yes",
-          "initial_probability": 0.52
+          "initial_probability": 0.53
         },
         {
           "label": "No",
-          "initial_probability": 0.48
+          "initial_probability": 0.47
         }
       ],
       "scores": {
-        "creativity": 0.9,
+        "creativity": 0.91,
         "clarity": 0.82,
         "evidence": 0.84,
-        "fun": 0.88
+        "fun": 0.9
       },
       "evidence": [
         {
@@ -259,18 +1715,18 @@
       ]
     },
     {
-      "id": "curatedv3-617e64f9083e",
-      "slug": "how-many-explicit-confirmations-by-20-00-on-meetup-day",
+      "id": "fresh-1b436432c6c6",
+      "slug": "how-many-explicit-confirmations-by-20-00-on-meet-1b436432",
       "title": "How many explicit confirmations by 20:00 on meetup day?",
-      "description": "Commitment depth before transport and seat logistics start.",
+      "description": "Measures early commitment before logistics acceleration.",
       "category": "Attendance",
       "market_type": "NUMERIC",
-      "resolution_criteria": "Resolves to bucket by count of unique confirmation messages by 20:00 local time.",
-      "close_time_guess": "2026-03-07T21:00:00.000Z",
+      "resolution_criteria": "Resolves to bucket by number of unique explicit confirmations by 20:00 local time.",
+      "close_time_guess": "2026-02-28T18:00:00.000Z",
       "outcomes": [
         {
           "label": "0-4",
-          "initial_probability": 0.18
+          "initial_probability": 0.17
         },
         {
           "label": "5-7",
@@ -278,35 +1734,35 @@
         },
         {
           "label": "8+",
-          "initial_probability": 0.35
+          "initial_probability": 0.36
         }
       ],
       "scores": {
-        "creativity": 0.74,
+        "creativity": 0.75,
         "clarity": 0.92,
-        "evidence": 0.87,
-        "fun": 0.74
+        "evidence": 0.88,
+        "fun": 0.75
       },
       "evidence": [
         {
-          "quote": "סקר: שישי אתה בא אפשרות: כן עם בת זוג (0 הצבעות) אפשרות: כן (7 הצבעות) אפשרות: לא אבל אולי כן (0 הצבעות)",
-          "approx_time": "2026-02-18T12:08:36.000Z"
+          "quote": "ניסיתי מהצהריים להרחיב את השולחן והם לא עונים משום מה אנסה שוב לקראת הערב במקסימום מי שמגיע ראשון ויכול לבקש להוסיף שני כיסאות תבוא עליו הברכה❤️",
+          "approx_time": "2026-02-20T18:45:02.000Z"
         },
         {
-          "quote": "אני גם אשמח",
-          "approx_time": "2026-02-20T21:03:17.000Z"
+          "quote": "כל המפתיעים אם אתם מגיעים תתקשרו להגדיל מקום",
+          "approx_time": "2026-02-19T17:58:29.000Z"
         }
       ]
     },
     {
-      "id": "curatedv3-69c355c09951",
-      "slug": "how-many-movement-updates-in-the-final-hour",
-      "title": "How many movement updates (“בדרך / יצאתי / אני פה”) in the final hour?",
-      "description": "Operational traffic around arrival in the last-mile window.",
+      "id": "fresh-76d9495162c8",
+      "slug": "how-many-movement-updates-in-the-final-hour-76d94951",
+      "title": "How many movement updates (\"בדרך/יצאתי/אני פה\") in the final hour?",
+      "description": "Last-mile movement chatter intensity market.",
       "category": "Chaos",
       "market_type": "NUMERIC",
-      "resolution_criteria": "Resolves to bucket by count of movement/arrival updates in the final 60 minutes.",
-      "close_time_guess": "2026-02-28T18:00:00.000Z",
+      "resolution_criteria": "Resolves to bucket by number of movement/arrival updates in final 60 minutes.",
+      "close_time_guess": "2026-03-01T19:00:00.000Z",
       "outcomes": [
         {
           "label": "0-2",
@@ -314,18 +1770,18 @@
         },
         {
           "label": "3-5",
-          "initial_probability": 0.53
+          "initial_probability": 0.52
         },
         {
           "label": "6+",
-          "initial_probability": 0.31
+          "initial_probability": 0.32
         }
       ],
       "scores": {
-        "creativity": 0.8,
+        "creativity": 0.81,
         "clarity": 0.9,
         "evidence": 0.91,
-        "fun": 0.82
+        "fun": 0.83
       },
       "evidence": [
         {
@@ -333,24 +1789,24 @@
           "approx_time": "2026-02-20T22:03:33.000Z"
         },
         {
-          "quote": "אני פה",
-          "approx_time": "2026-02-19T22:08:14.000Z"
+          "quote": "אני וטל בדרך",
+          "approx_time": "2026-02-19T22:14:33.000Z"
         }
       ]
     },
     {
-      "id": "curatedv3-782e914718b8",
-      "slug": "how-many-distinct-venue-candidates-will-be-debated-before-lock",
-      "title": "How many distinct venue candidates will be debated before lock?",
-      "description": "Decision-complexity market for place selection.",
+      "id": "fresh-6cebae70570e",
+      "slug": "how-many-distinct-venue-options-will-be-debated--6cebae70",
+      "title": "How many distinct venue options will be debated before lock?",
+      "description": "Decision complexity around location selection.",
       "category": "Plans",
       "market_type": "NUMERIC",
-      "resolution_criteria": "Resolves to bucket by number of distinct place options discussed before final venue lock.",
-      "close_time_guess": "2026-03-01T19:00:00.000Z",
+      "resolution_criteria": "Resolves to bucket by count of distinct venue candidates discussed before final lock.",
+      "close_time_guess": "2026-03-02T20:00:00.000Z",
       "outcomes": [
         {
           "label": "1-2",
-          "initial_probability": 0.26
+          "initial_probability": 0.25
         },
         {
           "label": "3-4",
@@ -358,47 +1814,47 @@
         },
         {
           "label": "5+",
-          "initial_probability": 0.24
+          "initial_probability": 0.25
         }
       ],
       "scores": {
-        "creativity": 0.85,
+        "creativity": 0.86,
         "clarity": 0.85,
         "evidence": 0.88,
         "fun": 0.8
       },
       "evidence": [
         {
-          "quote": "הזקן והים הדרדרו ממש לפחות הסניף בטיילת",
-          "approx_time": "2026-02-19T12:21:54.000Z"
-        },
-        {
           "quote": "לבוא לכצנלסון?",
           "approx_time": "2026-02-20T22:03:48.000Z"
+        },
+        {
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
         }
       ]
     },
     {
-      "id": "curatedv3-b2cf11e04de7",
-      "slug": "which-area-will-host-the-next-main-meetup",
+      "id": "fresh-3700d423848f",
+      "slug": "which-area-will-host-the-next-main-meetup-3700d423",
       "title": "Which area will host the next main meetup?",
-      "description": "Area forecast anchored to newest location arguments.",
+      "description": "Area-level outcome market based on newest location arguments.",
       "category": "Other",
       "market_type": "MULTIPLE_CHOICE",
-      "resolution_criteria": "Resolves to area of the final venue written in chat.",
-      "close_time_guess": "2026-03-02T20:00:00.000Z",
+      "resolution_criteria": "Resolves to the area of final announced venue in the next main meetup thread.",
+      "close_time_guess": "2026-03-03T21:00:00.000Z",
       "outcomes": [
         {
           "label": "Tel Aviv",
-          "initial_probability": 0.45
+          "initial_probability": 0.44
         },
         {
           "label": "Givatayim",
           "initial_probability": 0.41
         },
         {
-          "label": "Other",
-          "initial_probability": 0.14
+          "label": "Other area",
+          "initial_probability": 0.15
         }
       ],
       "scores": {
@@ -409,68 +1865,68 @@
       },
       "evidence": [
         {
-          "quote": "טוב עזבו נשאיר תל אביב",
-          "approx_time": "2026-02-13T16:55:15.000Z"
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
         },
         {
-          "quote": "אין לי בעיה גבעתיים",
-          "approx_time": "2026-02-13T16:47:59.000Z"
+          "quote": "אני נטע עודד פומי ופלגחן יושבים בגבעתיים באזור 21 מי שרוצה להצטרף",
+          "approx_time": "2026-02-16T16:13:03.000Z"
         }
       ]
     },
     {
-      "id": "curatedv3-8f1d091ba8bf",
-      "slug": "who-will-post-the-final-lock-in-message",
-      "title": "Who will post the final lock-in message?",
-      "description": "Endgame ownership market for final confirmed plan.",
+      "id": "fresh-899f7f01eac2",
+      "slug": "who-will-post-the-final-lock-in-message-time-pla-899f7f01",
+      "title": "Who will post the final lock-in message (time + place)?",
+      "description": "Endgame ownership market among top planners.",
       "category": "Friends",
       "market_type": "MULTIPLE_CHOICE",
-      "resolution_criteria": "Resolves to the person posting the final clear lock-in message (time + place).",
-      "close_time_guess": "2026-03-03T21:00:00.000Z",
+      "resolution_criteria": "Resolves to the person who posts the final unambiguous lock-in message for next main meetup.",
+      "close_time_guess": "2026-03-04T18:00:00.000Z",
       "outcomes": [
         {
-          "label": "Peleg Chen",
-          "initial_probability": 0.35
+          "label": "פומי",
+          "initial_probability": 0.33
         },
         {
           "label": "עומר יוסף",
-          "initial_probability": 0.3
+          "initial_probability": 0.28
         },
         {
-          "label": "מעיין באר",
-          "initial_probability": 0.2
+          "label": "Peleg Chen",
+          "initial_probability": 0.22
         },
         {
           "label": "Someone else",
-          "initial_probability": 0.15
+          "initial_probability": 0.17
         }
       ],
       "scores": {
-        "creativity": 0.88,
+        "creativity": 0.89,
         "clarity": 0.86,
         "evidence": 0.86,
         "fun": 0.84
       },
       "evidence": [
         {
-          "quote": "סבבה עשר שם",
-          "approx_time": "2026-02-19T21:21:47.000Z"
+          "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
+          "approx_time": "2026-02-20T20:23:12.000Z"
         },
         {
-          "quote": "מחר בערב בשולי לוצי ב 22:30 במקום הוזמן ל 8 אנשים יש 1+1 על האלכוהול מה שאומר שמדובר בערב קצה ממליץ להגיע לכבוד יום הולדתי כאחד מזקני השבט 🥳😯",
-          "approx_time": "2026-02-19T13:12:37.000Z"
+          "quote": "סבבה עשר שם",
+          "approx_time": "2026-02-19T21:21:47.000Z"
         }
       ]
     },
     {
-      "id": "curatedv3-e7d6c3efd8a4",
-      "slug": "what-final-start-time-bucket-will-be-locked",
+      "id": "fresh-20ad2fae3302",
+      "slug": "what-final-start-time-bucket-will-be-locked-20ad2fae",
       "title": "What final start-time bucket will be locked?",
-      "description": "Time-bucket showdown based on repeated late-evening shifts.",
+      "description": "Start-time showdown from recurring late-evening negotiations.",
       "category": "Tonight",
       "market_type": "MULTIPLE_CHOICE",
-      "resolution_criteria": "Resolves to final agreed start-time bucket in chat.",
-      "close_time_guess": "2026-03-04T18:00:00.000Z",
+      "resolution_criteria": "Resolves to final agreed start-time bucket in next main meetup thread.",
+      "close_time_guess": "2026-03-05T19:00:00.000Z",
       "outcomes": [
         {
           "label": "21:00-21:29",
@@ -493,24 +1949,107 @@
       },
       "evidence": [
         {
-          "quote": "יאללה רבע לעשר שם",
-          "approx_time": "2026-02-19T21:05:57.000Z"
-        },
-        {
           "quote": "אני מוציא רכב מגבעתיים בעשרה ל22 יש לי 4 מקומות הזמן לא גמיש כי 22:30 אנחנו שם מי שרוצה שיכתוב פה אני לא זמין בפרטי",
           "approx_time": "2026-02-20T20:23:12.000Z"
+        },
+        {
+          "quote": "סבבה עשר שם",
+          "approx_time": "2026-02-19T21:21:47.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fresh-883ab222c8a1",
+      "slug": "will-weather-wind-concerns-trigger-a-plan-adjust-883ab222",
+      "title": "Will weather/wind concerns trigger a plan adjustment?",
+      "description": "Environmental factor market based on observed wind discussion.",
+      "category": "Logistics",
+      "market_type": "YES_NO",
+      "resolution_criteria": "Resolves YES if weather/wind concern message causes a location/time adjustment in next plan cycle.",
+      "close_time_guess": "2026-03-06T20:00:00.000Z",
+      "outcomes": [
+        {
+          "label": "Yes",
+          "initial_probability": 0.39
+        },
+        {
+          "label": "No",
+          "initial_probability": 0.61
+        }
+      ],
+      "scores": {
+        "creativity": 0.87,
+        "clarity": 0.84,
+        "evidence": 0.83,
+        "fun": 0.79
+      },
+      "evidence": [
+        {
+          "quote": "כן ירדתי למטה הרגשתי",
+          "approx_time": "2026-02-13T13:39:57.000Z"
+        },
+        {
+          "quote": "לא ממליץ יש רוח חזקה",
+          "approx_time": "2026-02-13T13:25:58.000Z"
         }
       ]
     }
   ],
   "meta": {
-    "focus": "bottom-most updates prioritized; repetitive markets removed",
+    "focus": "full reset: 55 markets, newest-first evidence, person-by-person + couples + group logistics",
     "sourceMessages": 5820,
-    "recencyWindow": 700,
-    "keptMarketCount": 13,
-    "leaders": [
+    "participantsIncluded": [
+      "שננגן הקטן🤝",
+      "עומר יוסף",
+      "פומי",
       "Peleg Chen",
-      "עומר יוסף"
-    ]
+      "מעיין באר",
+      "אריאל",
+      "ליעד חבאני",
+      "שי פ",
+      "מריאן",
+      "פלג בזק",
+      "ינון דולב",
+      "שוהם ארמוזה",
+      "לרי",
+      "דור סתיו",
+      "תומר ולדמן",
+      "אריאל קוטנר",
+      "דניאל גלסברג",
+      "~ Yair Yanovice",
+      "ליבן",
+      "אביב תובל"
+    ],
+    "couplesIncluded": [
+      {
+        "boy": "פומי",
+        "partner": "טל"
+      },
+      {
+        "boy": "שוהם ארמוזה",
+        "partner": "טל"
+      },
+      {
+        "boy": "Peleg Chen",
+        "partner": "תמר"
+      },
+      {
+        "boy": "עומר יוסף",
+        "partner": "נטע"
+      },
+      {
+        "boy": "שננגן הקטן🤝",
+        "partner": "עדן"
+      },
+      {
+        "boy": "לרי",
+        "partner": "עדן"
+      },
+      {
+        "boy": "אריאל",
+        "partner": "שי"
+      }
+    ],
+    "generatedAt": "2026-02-21T18:24:41.167Z"
   }
 }
